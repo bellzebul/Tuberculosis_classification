@@ -1,0 +1,13 @@
+augmentation_staff:
+  dataset_path: '/dataset'
+  pixdim: (1.5, 1.5)
+  window_lvl: -600
+  window_width: 1600
+  img_size: (512, 512)
+  batch_size: 8
+  
+train_staff:
+  device: 'mps'
+  networks:
+    -arch: 'Unet'
+    epochs: 10
